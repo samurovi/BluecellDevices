@@ -1,0 +1,580 @@
+/*General*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(230, 228, 228);
+    position: relative;
+    width: 100%;
+}
+
+/*Header*/
+
+header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    background-image: url(..//RECURSOS_GRAFICOS/BANNER_NAV_Y_BANNER_FOOTER/BANNER-SUPERIOR-1280-X-100.jpg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+.carousel-inner{
+    height: fit-content;
+    box-shadow: 0px 3px 15px -5px black;
+    width: 100%;
+}
+
+.barra-navegacion-container{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin: 10px 0 0 0;
+}
+
+.barra-navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+}
+
+.barra-navegacion li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.barra-navegacion-item a{
+    transition: all 0.5s;
+}
+
+.barra-navegacion-item a:hover{
+    color: #1E1E1C;
+}
+
+/*Botón Menú*/
+
+.menu{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu:hover{
+    background-color: rgba(255, 255, 255, 0.301); 
+}
+
+#titulo{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(92, 92, 255);
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.dropdown-menu{
+    width: 200px;
+}
+
+#dropdown-item{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: lighter;
+    transition: all 0s;
+}
+
+#dropdown-item:hover{
+    background-color: rgb(209, 207, 207);
+    font-weight: bold;
+    border-left: 5px solid rgb(92, 92, 255);
+    cursor: pointer;
+}
+
+/*Barra de Búqueda*/
+
+.barra-busqueda-container{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+#search-box{
+    border: none;
+    border-style: none;
+    margin: 0px 0px 0px 20px;
+    width: 80px;
+    outline: none;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+}
+
+#search-button{
+    display: flex;
+    justify-content: center;
+    background-color: #525252;
+    border-radius: 20px;
+    height: fit-content;
+    width: 30px;
+    height: 30px;
+}
+
+#search-button:hover{
+    background-color:  rgb(92, 92, 255);
+}
+
+/*Botón Iniciar Sesión*/
+
+.inicio-sesion{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.inicio-sesion:hover{
+    background-color: rgba(255, 255, 255, 0.301); 
+}
+
+/*Modal registro*/
+
+.modal-container{
+    display: none;
+    background-color: rgba(192, 191, 191, 0.8);
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.show{
+    display:block;
+    pointer-events: auto;
+}
+
+.modal-container h2{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+    
+.registro-container {
+    font-family: 'Wix Madefor Display', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0% 3% 3% 3%;
+    box-shadow: 3px 3px 15px 5px rgb(128, 128, 128);
+}
+
+#close{
+    display: flex;
+    position: relative;
+    left: 95%;
+    top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+#close:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+    
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.genero{
+    text-align: center;
+    display: block;
+}
+    
+#nombre, #direccion, #email, #celular, #ciudad, #password, #password-repeat{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    }
+
+#registrarme {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(92, 92, 255);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+#registrarme:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.tienes-cuenta{
+    text-align: center;
+}
+
+/*Modal Inicio de sesión*/
+
+.modal-container-inicio{
+    display: none;
+    background-color: rgba(192, 191, 191, 0.8);
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.show2{
+    display:block;
+    pointer-events: auto;
+}
+
+#close2{
+    display: flex;
+    position: relative;
+    left: 95%;
+    top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+#close2:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container{
+    font-family: 'Wix Madefor Display', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+form{
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 5px rgb(128, 128, 128);
+}
+  
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+  
+.form-group{
+    margin-bottom: 15px;
+}
+  
+label{
+    display: block;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+  
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btn-inicio-sesion{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(92, 92, 255);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+#btn-inicio-sesion:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+  
+a{
+    color: blue;
+    text-decoration: none;
+}
+  
+a:hover{
+    text-decoration: underline;
+}
+
+/*Botón Carrito*/
+
+.carrito{
+    padding: 7px 10px 5px 5px;
+    border-radius: 100%;
+    filter:hue-rotate(rgb 255, 255, 255);
+}
+
+.carrito:hover{
+    background-color: rgba(255, 255, 255, 0.301); 
+}
+
+/*Aside*/
+
+aside{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 228, 228);
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    margin: 40px 10px 10px 10px;
+    color: #1E1E1C;
+    padding-bottom: 10px ;
+}
+
+.section1 span{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-weight: bolder;
+    color: rgb(92, 92, 255);
+}
+
+.filtros-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-item{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.section2{
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.section2 figure{
+    margin: 0;
+    padding: 0;
+}
+
+.section2 img{
+    transition: all 0.5s;
+}
+
+.section2 img:hover{
+    opacity: calc(50%);
+}
+
+/*Main*/
+
+.ordenar-container{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.producto-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    flex-direction: row;
+    padding-top: 10px;
+    background-color: rgb(230, 228, 228);
+    width: 100%;
+}
+
+.producto-container span{
+    width: 100%;
+    margin: 10px 0 10px 10px;
+    color: #575656;
+    font-size: 1rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.producto-item{
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    background-color: white;
+}
+
+.producto-item p{
+    margin: 0;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.producto-item img{
+    transition: all 0.7s;
+}
+
+.producto-item img:hover{
+    transform: scale(1.1);
+}
+
+#uno{
+    color: red;
+}
+
+.descripcion{
+    margin: 10px;
+    min-height: 125px;
+}
+
+.button {
+    width: 160px;
+    background-color: rgb(92, 92, 255);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    transition: all 1s;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.button:hover{
+    opacity: 60%;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.boton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*Footer*/
+
+footer{
+    background-image: url(..//RECURSOS_GRAFICOS/BANNER_NAV_Y_BANNER_FOOTER/BANNER-INFERIO-1280-X-200-OPCION1.jpg);
+    background-size: cover;
+    color: white;
+    width: 100%;
+}
+
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.section3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.section3 span{
+    transition: all 0.5s;
+    margin: 0 15px 0 15px;
+}
+
+.section3 span:hover{
+    color: #1E1E1C;
+}
+
+.section4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+}
+
+.section4 span{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.section4 figure{
+    height: fit-content;
+    margin: 0 10px 10px 10px;
+}

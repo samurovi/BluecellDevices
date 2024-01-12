@@ -1,0 +1,281 @@
+/*General*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    background-image: url(..//RECURSOS_GRAFICOS/BANNER_NAV_Y_BANNER_FOOTER/BANNER-SUPERIOR-1280-X-100.jpg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+.carousel-inner{
+    height: fit-content;
+    box-shadow: 0px 3px 15px -5px black;
+    width: 100%;
+}
+
+.logo-container{
+    display: flex;
+    margin: 10px 0 0 0;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.barra-navegacion-container{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.barra-navegacion{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+.barra-navegacion li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.barra-navegacion-item a{
+    transition: all 0.5s;
+}
+
+.barra-navegacion-item a:hover{
+    color: #1E1E1C;
+}
+
+/*Botón Menú*/
+
+.menu{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu:hover{
+    background-color: rgba(255, 255, 255, 0.301); 
+}
+
+#titulo{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(92, 92, 255);
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.dropdown-menu{
+    width: 200px;
+}
+
+#dropdown-item{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: lighter;
+    transition: all 0s;
+}
+
+#dropdown-item:hover{
+    background-color: rgb(209, 207, 207);
+    font-weight: bold;
+    border-left: 5px solid rgb(92, 92, 255);
+    cursor: pointer;
+}
+
+/*Barra de Búqueda*/
+
+.barra-busqueda-container{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 35px;
+    align-items: center;
+    width: 150px;
+}
+
+#search-box{
+    border: none;
+    border-style: none;
+    margin: 0px 0px 0px 20px;
+    width: 97px;
+    outline: none;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+#search-button{
+    display: flex;
+    justify-content: center;
+    background-color: #525252;
+    border-radius: 20px;
+    height: fit-content;
+    width: 40px;
+    height: 35px;
+}
+
+#search-button:hover{
+    background-color:  rgb(92, 92, 255);
+}
+
+/*Botón Iniciar Sesión*/
+
+.inicio-sesion{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.inicio-sesion:hover{
+    background-color: rgba(255, 255, 255, 0.301); 
+}
+
+/*Botón Carrito*/
+
+.carrito{
+    padding: 7px 10px 5px 5px;
+    border-radius: 100%;
+    filter:hue-rotate(rgb 255, 255, 255);
+}
+
+.carrito:hover{
+    background-color: rgba(255, 255, 255, 0.301); 
+}
+
+/*Main*/
+
+main{
+    padding-top: 200px;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.section1 figure{
+    margin: 0;
+}
+
+.section1 img{
+    transition: all 0.5s;
+}
+
+.section1 img:hover{
+    opacity: calc(50%);
+}
+
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 30px;
+}
+
+.section2 span{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #1E1E1C;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.section2 figure{
+    margin: 0;
+    padding: 20px;
+    width: 30%;
+}
+
+.section2 img{
+    transition: all 1s;
+    width: 100%;
+    box-shadow: 2px 2px 15px black;
+    border-radius: 100%;
+}
+
+.section2 img:hover{
+    transform: scale(1.1);
+}
+
+/*Footer*/
+
+footer{
+    background-image: url(..//RECURSOS_GRAFICOS/BANNER_NAV_Y_BANNER_FOOTER/BANNER-INFERIO-1280-X-200-OPCION1.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.section3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.section3 span{
+    transition: all 0.5s;
+    margin: 0 15px 0 15px;
+}
+
+.section3 span:hover{
+    color: #1E1E1C;
+}
+
+.section4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.section4 span{
+    width: 100%;
+    text-align: center;
+
+}
