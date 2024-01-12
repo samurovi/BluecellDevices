@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/catalogo-mobile.css">
+        <link rel="stylesheet" href="./CSS/catalogo-tablet.css" media="screen and (min-width: 600px)">
+        <link rel="stylesheet" href="./CSS/catalogo-desktop.css" media="screen and (min-width: 900px)">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+      </style>
+</head>
+<body>
+
+    <div class="modal-container" id="modal_container">
+        <h2>Registro</h2>
+        <form class="registro-container">
+            
+            <span id="close">X</span>
+
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>   
+
+            <label class="genero" for="genero">Género:
+            <input type="radio" id="genero" name="genero" value="h"/> Hombre <input type="radio" id="genero" name="genero" value="m"/> Mujer
+            </label>
+
+            <label for="direccion">Dirección:</label>    
+            <input type="text" id="direccion" name="direccion" required>   
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="Ciudad" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="password-repeat">Repetir Contraseña:</label>
+            <input type="password" id="password-repeat" name="password" required>
+
+            <p><input type="checkbox" id="info" name="info" checked="checked"/> Deseo recibir información sobre novedades y ofertas.</p>
+            
+            <p><input type="checkbox" id="condiciones" name="condiciones"/> Declaro haber leído y aceptar las condiciones generales de la página y la normativa sobre protección de datos.</p>
+
+            <a href="cuenta-usuario.html"><button id="registrarme" type="button">Registrarme</button></a><br><br>
+            
+            <p class="tienes-cuenta">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p> 
+        </form>
+    </div>
+
+    <div class="modal-container-inicio" id="modal_container_inicio">
+        <div class="container">
+            <form action="#">
+                <span id="close2">X</span>
+                <h2>Iniciar sesión</h2>
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordar contraseña</label>
+                </div>
+                <div class="form-group">
+                    <a href="cuenta-usuario.html"><input type="button" id="btn-inicio-sesion" value="Iniciar sesión"></a>
+                </div>
+                <div class="form-group">
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1001.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1002.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1003.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1004.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1005.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1006.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1007.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1008.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+                <div class="carousel-item">
+                    <img src="./RECURSOS_GRAFICOS/BANNERS_PROMOCIONALES/BANNER_1280_X_1009.jpg" class="d-block w-100" alt="banner promocional">
+                </div>
+            </div>
+        </div>
+        
+        <figure class="logo-container">
+            <a href="index.html"><img src="./RECURSOS_GRAFICOS/LOGOTIPO/BLANCO-HORIZONTAL.png" height= 57px width= 130px alt="logotipo de bluecell"></a>
+        </figure>
+
+        <nav class="barra-navegacion-container">
+            <ul class="barra-navegacion">
+                <li class="barra-navegacion-item">
+                    <div class="menu-container">
+                        <button class="menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ≡ Menú
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><strong id="titulo">Categorías</strong></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Celulares</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Vidrios</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Cargadores</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Bolsos</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Cables</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Trípodes</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Power Banks</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Aros de luz</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Audífonos BT</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Parlantes</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Carcasas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="barra-navegacion-item">
+                    <div class="barra-busqueda-container">
+                        <input id="search-box" type="text" placeholder="Buscar">
+                        <div id="search-button">
+                            <a href="catalogo.html"><img src="./RECURSOS_GRAFICOS/ICONOS_VARIOS/LUPA.png" height="20px" width="20px" alt="lupa"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="barra-navegacion-item">
+                    <div class="inicio-sesion-container"></div>
+                        <button class="inicio-sesion" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Iniciar Sesión
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li id="dropdown-item"><span id="open2">Inicia Sesión</span></li>
+                            <li id="dropdown-item"><span id="open">Regístrate</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="barra-navegacion-item">
+                    <div class="carrito-container">
+                        <a href="carrito.html"><img class="carrito" src="./RECURSOS_GRAFICOS/ICONOS_VARIOS/CARRITO-DE-COMPRAS.png" height="50px" width="50px" alt="carrito de compras"></a>
+                    </div>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+
+    <aside>
+        <section class="section1">
+            <span>Filtrar por:</span>
+
+            <div class="filtros-container">
+                <button class="filtro-item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marca
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li id="dropdown-item">Samsung</li>
+                    <li id="dropdown-item">Iphone</li>
+                    <li id="dropdown-item">Huawei</li>
+                    <li id="dropdown-item">Xiaomi</li>
+                    <li id="dropdown-item">Motorola</li>
+                </ul>
+
+                <button class="filtro-item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tipo
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li id="dropdown-item">Lightning</li>
+                    <li id="dropdown-item">Microusb</li>
+                    <li id="dropdown-item">Tipo C</li>
+                </ul>
+
+                <button class="filtro-item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Precio
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li id="dropdown-item">$500 - $20.000</li>
+                    <li id="dropdown-item">$20.100 - $50.000</li>
+                    <li id="dropdown-item">$50.100 - $80.000</li>
+                    <li id="dropdown-item">$80.100 - $100.000</li>
+                    <li id="dropdown-item">Mas de $100.000</li>
+                </ul>
+
+                <button class="filtro-item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Material
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li id="dropdown-item">Goma</li>
+                    <li id="dropdown-item">Silicona</li>
+                    <li id="dropdown-item">Pasta</li>
+                    <li id="dropdown-item">Gel</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="section2">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/BANNER_350_X_500/BANNER_350_X_5001.png" width="100%" alt="imagen publicitaria">
+            </figure>
+
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/BANNER_350_X_500/BANNER_350_X_5002.png" width="100%" alt="imagen publicitaria">
+            </figure>
+
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/BANNER_350_X_500/BANNER_350_X_5003.png" width="100%" alt="imagen publicitaria">
+            </figure>
+        </section>
+    </aside>
+
+    <main class="producto-container">
+        
+        <div class="ordenar-container">
+            <button class="filtro-item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por
+            </button>
+
+            <ul class="dropdown-menu">
+                <li id="dropdown-item">Precio de menor a mayor</li>
+                <li id="dropdown-item">Precio de mayor a menor</li>
+                <li id="dropdown-item">Marca</li>
+                <li id="dropdown-item">Nuevos productos</li>
+                <li id="dropdown-item">Los mejores evaluados</li>
+                <li id="dropdown-item">Recomendados</li>
+            </ul>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/AROS_DE_LUZ/ARO-DE-LUZ-SELFIE-18--PULGADAS.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>18 Pulgadas</p>
+                <p><b>Aro de Luz Selfie</b></p>
+                <p><del>$120.000</del></p>
+                <p id="uno"><b>$99.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CABLES/CABLE-TIPO-C.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Tipo C</p>
+                <p><b>Cable Blanco 1m</b></p>
+                <p><del>$15.000</del></p>
+                <p id="uno"><b>$9.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CARCASAS/MOTOROLA/MOTOEDGE.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Moto Edge</p>
+                <p><b>Funda Gel Transparente</b></p>
+                <p><del>$25.000</del></p>
+                <p id="uno"><b>$21.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/POWERBANK/BATERIA-EXTERNA-BELKIN.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>10.000 mah</p>
+                <p><b>Batería Externa Belkin</b></p>
+                <p><del>$90.000</del></p>
+                <p id="uno"><b>$75.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/HOLDERS/SOPORTE-UNIVERSAL-PARA-CARRO.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Bogo</p>
+                <p><b>Soporte Universal Carro</b></p>
+                <p><del>$30.000</del></p>
+                <p id="uno"><b>$24.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/TRIPODES/TRIPODE-UNIVERSAL-40-PULGADAS.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>40 Pulgadas</p>
+                <p><b>Trípode Universal</b></p>
+                <p><del>$190.000</del></p>
+                <p id="uno"><b>$149.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/BOLSOS/BOLSO-PELICAN-NARANJA.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Pelican</p>
+                <p><b>Bolso Celular</b></p>
+                <p><del>$20.000</del></p>
+                <p id="uno"><b>$17.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CARGADORES/Cargador-inalámbrico-celular-magnético.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>10.000mah</p>
+                <p><b>Cargador Inalámbrico Magnético</b></p>
+                <p><del>$120.000</del></p>
+                <p id="uno"><b>$99.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/MANOS_LIBRES_AUDIFONOS_BT/JBL-WABE-100.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>JBL</p>
+                <p><b>Audífonos Inalámbrico Wave 100</b></p>
+                <p><del>$300.000</del></p>
+                <p id="uno"><b>$249.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CABLES/Cable-Iphone-lightning1MUSB.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Iphone Lightning</p>
+                <p><b>Cable Blanco 1m</b></p>
+                <p><del>$40.000</del></p>
+                <p id="uno"><b>$34.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CARCASAS/IPHONE/IPHONE-13-PRO-MAX.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Iphone 12 Pro Max</p>
+                <p><b>Funda Pasta Humo</b></p>
+                <p><del>$60.000</del></p>
+                <p id="uno"><b>$55.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CARCASAS/XIAOMI/XIAMOMI-NOTE-8.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>Xiaomi Note 8</p>
+                <p><b>Funda Goma Rojo</b></p>
+                <p><del>$30.000</del></p>
+                <p id="uno"><b>$25.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/AROS_DE_LUZ/ARO-DE-LUZ-SELFIE-70-PULGADAS-MULTICOLOR-CONTROL-REMOTO.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>70 Pulgadas</p>
+                <p><b>Aro de Luz Selfie Control Remoto</b></p>
+                <p><del>$170.000</del></p>
+                <p id="uno"><b>$129.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/POWERBANK/BATERIA-EXTERNA-CARGA-SOLAR.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>5.000mah</p>
+                <p><b>Batería Externa Carga Solar</b></p>
+                <p><del>$50.000</del></p>
+                <p id="uno"><b>$46.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/CARGADORES/Cargador-carga-rapida-carro-USB.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>USB</p>
+                <p><b>Cargador Carga Rápida Carro</b></p>
+                <p><del>$25.000</del></p>
+                <p id="uno"><b>$19.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="producto-item">
+            <figure>
+                <img src="./RECURSOS_GRAFICOS/FOTOS_PRODUCTOS/MANOS_LIBRES_AUDIFONOS_BT/AIRPODS-PRO-TERCERA-GENERACION.jpg" width="100%" alt="producto">
+            </figure>
+            <div class="descripcion">
+                <p>3ra Generación</p>
+                <p><b>Arirpods Pro</b></p>
+                <p><del>$1.500.000</del></p>
+                <p id="uno"><b>$1.190.900</b></p>
+            </div>
+            <div class="boton">
+                <a href="carrito.html">
+                    <button class="button">
+                        Agregar al Carrito
+                    </button>
+                </a>
+            </div>
+        </div>
+      
+    </main>
+
+    <footer>
+        <section class="section3">
+            <a href="sobre-nosotros.html"><span>Sobre Nosotros</span></a>
+
+            <a href="terminos-y-condiciones.html"><span>Términos y Condiciones</span></a>
+
+            <a href="politica-de-privacidad.html"><span>Política de Privacidad</span></a>
+        </section>
+
+        <section class="section4">
+            <span>Encuentranos en redes sociales:</span>
+            
+            <figure>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./RECURSOS_GRAFICOS/ICONOS_REDES_SOCIALES/FACEBOOK.png" height= 30px width= 30px alt="Ícono de Facebook"></a>
+            </figure>
+
+            <figure>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./RECURSOS_GRAFICOS/ICONOS_REDES_SOCIALES/INSTAGRAM.png" height= 30px width= 30px alt="Ícono de Instagram"></a>
+            </figure>
+
+            <figure>
+                <a href="https://wa.me/573003167892" target="_blank"><img src="./RECURSOS_GRAFICOS/ICONOS_REDES_SOCIALES/WHATSAPP.png" height= 30px width= 30px alt="Ícono de Whatsapp"></a>
+            </figure>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const open = document.getElementById('open');
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click', ()=>{
+            modal_container.classList.add('show')
+        });
+
+        close.addEventListener('click', ()=>{
+            modal_container.classList.remove('show')
+        });
+    </script>
+
+    <script>
+        const open2 = document.getElementById('open2');
+        const modal_container_inicio = document.getElementById('modal_container_inicio');
+        const close2 = document.getElementById('close2');
+
+        open2.addEventListener('click', ()=>{
+            modal_container_inicio.classList.add('show2')
+        });
+
+        close2.addEventListener('click', ()=>{
+            modal_container_inicio.classList.remove('show2')
+        });
+    </script>
+    
+</body>
+</html>

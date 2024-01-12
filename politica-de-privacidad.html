@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+    </style>
+    <link rel="stylesheet" href="./CSS/politica-de-privacidad-mobile.css">
+    <link rel="stylesheet" href="./CSS/politica-de-privacidad-tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./CSS/politica-de-privacidad-desktop.css" media="screen and (min-width: 900px)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="modal-container" id="modal_container">
+        <h2>Registro</h2>
+        <form class="registro-container">
+            
+            <span id="close">X</span>
+
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>   
+
+            <label class="genero" for="genero">Género:
+            <input type="radio" id="genero" name="genero" value="h"/> Hombre <input type="radio" id="genero" name="genero" value="m"/> Mujer
+            </label>
+
+            <label for="direccion">Dirección:</label>    
+            <input type="text" id="direccion" name="direccion" required>   
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="Ciudad" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="password-repeat">Repetir Contraseña:</label>
+            <input type="password" id="password-repeat" name="password" required>
+
+            <p><input type="checkbox" id="info" name="info" checked="checked"/> Deseo recibir información sobre novedades y ofertas.</p>
+            
+            <p><input type="checkbox" id="condiciones" name="condiciones"/> Declaro haber leído y aceptar las condiciones generales de la página y la normativa sobre protección de datos.</p>
+
+            <a href="cuenta-usuario.html"><button id="registrarme" type="button">Registrarme</button></a><br><br>
+            
+            <p class="tienes-cuenta">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p> 
+        </form>
+    </div>
+
+    <div class="modal-container-inicio" id="modal_container_inicio">
+        <div class="container-inicio">
+            <form action="#">
+                <span id="close2">X</span>
+                <h2>Iniciar sesión</h2>
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordar contraseña</label>
+                </div>
+                <div class="form-group">
+                    <a href="cuenta-usuario.html"><input type="button" id="btn-inicio-sesion" value="Iniciar sesión"></a>
+                </div>
+                <div class="form-group">
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <figure class="logo-container">
+            <a href="index.html"><img src="./RECURSOS_GRAFICOS/LOGOTIPO/BLANCO-HORIZONTAL.png" height= 57px width= 130px alt="logotipo de bluecell"></a>
+        </figure>
+
+        <nav class="barra-navegacion-container">
+            <ul class="barra-navegacion">
+                <li class="barra-navegacion-item">
+                    <div class="menu-container">
+                        <button class="menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ≡ Menú
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><strong id="titulo">Categorías</strong></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Celulares</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Vidrios</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Cargadores</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Bolsos</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Cables</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Trípodes</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Power Banks</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Aros de luz</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Audífonos BT</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Parlantes</a></li>
+                            <li><a id="dropdown-item" href="./catalogo.html">Carcasas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="barra-navegacion-item">
+                    <div class="barra-busqueda-container">
+                        <input id="search-box" type="text" placeholder="Buscar">
+                        <div id="search-button">
+                            <a href="catalogo.html"><img src="./RECURSOS_GRAFICOS/ICONOS_VARIOS/LUPA.png" height="20px" width="20px" alt="lupa"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="barra-navegacion-item">
+                    <div class="inicio-sesion-container">
+                        <button class="inicio-sesion" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Iniciar Sesión
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li id="dropdown-item"><span id="open2">Inicia Sesión</span></li>
+                            <li id="dropdown-item"><span id="open">Regístrate</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="barra-navegacion-item">
+                    <div class="carrito-container">
+                        <a href="carrito.html"><img class="carrito" src="./RECURSOS_GRAFICOS/ICONOS_VARIOS/CARRITO-DE-COMPRAS.png" height="50px" width="50px" alt="carrito de compras"></a>
+                    </div>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <span>
+                <b>POLÍTICA DE PRIVACIDAD</b>
+            </span>
+            <p>
+                POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES
+
+Contenido
+
+Capítulo I. Disposiciones generales
+
+Capítulo II Autorización
+
+Capítulo III Tratamiento de datos personales
+
+Capítulo IV Derechos y deberes
+
+Capítulo V Procedimiento de acceso, consulta y reclamación
+
+Capítulo VI Seguridad de la Información
+
+Capítulo VII Disposiciones finales
+
+Capítulo I. Disposiciones generales
+
+LEGISLACIÓN APLICABLE. Estas políticas fueron elaboradas teniendo en cuenta las disposiciones contenidas en la Constitución Política, la Ley 1581 de 2012, los Decretos Reglamentarios 1727 de 2009 y 2952 de 2010, Decreto Reglamentario 1377 de 2013 y Decreto Reglamentario 1074 de 2015 entre otras normas.
+AMBITO DE APLICACIÓN. Estas políticas se aplican al tratamiento de los datos de carácter personal que recoja y maneje ETIQUETASENLINEA.CO.
+BASES DE DATOS. Las políticas y procedimientos contenidos en el presente documento aplican a las bases de datos que maneja ETIQUETASENLINEA.CO y que serán registradas de conformidad con lo dispuesto en la Ley y sus decretos reglamentarios.
+OBJETO. Por medio del presente documento se da cumplimiento a lo previsto en el literal del artículo 17 de la Ley 1581 de 2012, que regula los deberes que asisten a los responsables del tratamiento de datos personales, dentro de los cuales se encuentra el de adoptar un documento interno de políticas y procedimientos para garantizar el adecuado cumplimiento de la ley y en especial, para la atención de consultas y reclamos.
+Así mismo tiene la finalidad de regular los procedimientos de recolección, manejo y tratamiento de los datos de carácter personal que realiza ETIQUETASENLINEA.CO, a fin de garantizar y proteger el derecho fundamental de habeas data en el marco de lo establecido en la misma ley.
+
+DEFINICIONES. Para efectos de la aplicación de las reglas contenidas en el presente documento y de acuerdo con lo establecido en el artículo 3 de la Ley 1581 de 2012 se entiende por:
+a) Autorización: Consentimiento previo, expreso e informado del Titular para llevar acabo el tratamiento de datos personales;
+b) Base de Datos: Conjunto organizado de datos personales que sea objeto de Tratamiento;
+c) Dato personal: Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables;
+d) Dato privado: Es el dato que por su naturaleza íntima o reservada sólo es relevante para el titular;
+e) Datos sensibles: Se entiende por datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promueva intereses de cualquier partido político o que garanticen los derechos y garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual y los datos biométricos.
+f) Dato público: Es aquel que no sea privado o sensible.
+g) Encargado del Tratamiento: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta del Responsable del Tratamiento;
+h) Responsable del Tratamiento: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos;
+i) Titular: Persona natural cuyos datos personales sean objeto de Tratamiento;
+j) Tratamiento: Cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación o supresión de los mismos.
+PRINCIPIOS. Los principios que se establecen a continuación, constituyen los parámetros generales que serán respetados por ETIQUETASENLINEA.CO en los procesos de acopio, uso y tratamiento de datos personales.
+
+a) Principio de finalidad: El Tratamiento de los datos personales recogidos por la ETIQUETASENLINEA.CO debe obedecer a una finalidad legítima de la cual debe ser informada al Titular;
+b) Legalidad. El Tratamiento de Datos Personales en Colombia es una actividad reglada y por ende los procesos de negocios y destinatarios de este Manual deben sujetarse a lo dispuesto en esta Política.
+c) Principio de libertad: El Tratamiento sólo puede llevarse a cabo con el consentimiento, previo, expreso e informado del Titular. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de mandato legal o judicial que releve el consentimiento;
+d) Principio de veracidad o calidad: La información sujeta a Tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. Se prohíbe el Tratamiento de datos parciales, incompletos, fraccionados o que induzcan error;
+e) Principio de transparencia: En el Tratamiento debe garantizarse el derecho del Titular a obtener de ETIQUETASENLINEA.CO en cualquier momento y sin restricciones, información acerca de la existencia de los datos que le conciernan;
+f) Principio de acceso y circulación restringida: Los datos personales, salvo la información pública, no podrán estar disponibles en Internet u otros medios de divulgación o comunicación masiva, salvo que el acceso sea técnicamente controlable para brindar un conocimiento restringido sólo a los Titulares o terceros autorizados.
+Solo serán cedidos a terceros que requieran estos Datos para la prestación de algún servicio a ETIQUETASENLINEA.CO que sea necesario y contenga la misma finalidad que le esté dando la Compañía a dichos Datos Personales. El Titular con su autorización, facultará a ETIQUETASENLINEA.CO de la misma manera a la transferencia y cesión de sus Datos Personales para las finalidades mencionadas en el presente documento;
+
+g) Principio de seguridad: La información sujeta a Tratamiento por parte de ETIQUETASENLINEA.CO se deberá proteger mediante el uso de las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento;
+h) Principio de confidencialidad: Todas las personas que intervengan en el Tratamiento de datos personales están obligadas a garantizar la reserva de la información, inclusive después de finalizada su relación con alguna de las labores que comprende el Tratamiento.
+Capítulo II. Autorización
+
+AUTORIZACIÓN. Sin perjuicio de las excepciones previstas en la Ley, para el Tratamiento del Dato Personal se requiere la autorización previa y expresa del Titular, por cualquier medio que pueda ser objeto de consulta posterior.
+No será requerida la autorización en los siguientes casos:
+
+1.1. Cuando sea requerida por entidad pública o administrativa en cumplimiento de sus funciones legales, o por orden judicial.
+
+1.2. Cuando se trate de Datos de naturaleza pública.
+
+1.3. En casos de emergencia médica o sanitaria.
+
+1.4. Cuando sea Tratamiento de información autorizado por la Ley para fines históricos, estadísticos o científicos.
+
+1.5. Cuando se trate de Datos Personales relacionados con el Registro Civil de las personas.
+
+FORMA Y MECANISMOS PARA OTORGAR LA AUTORIZACIÓN. La autorización puede constar en un documento físico, electrónico, o en cualquier otro formato que permita garantizar su posterior consulta, o mediante un mecanismo técnico o tecnológico idóneo mediante el cual se pueda concluir de manera inequívoca, que de no haberse surtido una conducta de autorización del titular, los datos nunca hubieren sido capturados y almacenados en la base de datos.
+Con el procedimiento de autorización consentida se garantiza que se ha puesto en conocimiento del titular de los datos personales, tanto el hecho de que su información personal será recogida y utilizada para fines determinados y conocidos, como que tiene la opción de conocer cualquier alternación a los mismos y el uso específico que de ellos se ha dado. Lo anterior con el fin de que el titular tome decisiones informadas con relación a sus datos personales y controle el uso de su información personal.
+
+Capítulo III. Tratamiento de datos personales
+
+Las operaciones que constituyen Tratamiento de Datos Personales por parte de ETIQUETASENLINEA.CO, en calidad de Responsable o Encargado del mismo, se regirán por los siguientes parámetros.
+
+Datos Personales relacionados con la Gestión del Recurso Humano
+1.1 Tratamiento de Datos antes de la relación laboral
+
+ETIQUETASENLINEA.CO informará, de manera anticipada a las personas interesadas en participar en un proceso de selección, las reglas aplicables al Tratamiento de los Datos Personales que suministre el interesado, así como respecto de aquellos que se obtengan durante el proceso de selección, y solicitará la correspondiente autorización para la aplicación del Tratamiento a sus Datos Personales.
+
+Cuando ETIQUETASENLINEA.CO contrate procesos de selección de personal con terceros regulará en los contratos el Tratamiento que se deberá dar a los Datos Personales entregados por los interesados, así como la destinación de la información personal obtenida del respectivo proceso.
+
+La finalidad del Tratamiento de los Datos suministrados por los interesados en las vacantes de ETIQUETASENLINEA.CO y la información personal obtenida del proceso de selección, se limita a: (i) clasificación, almacenamiento, archivo de los Datos Personales, (ii) entrega de la información a terceros encargados de los procesos de selección, (iii) verificar, comparar, evaluar las competencias laborales y personales de los prospectos respecto de los criterios de selección de ETIQUETASENLINEA.CO, (iv) en caso de que la compañía contrate plataformas basadas de tecnología en la nube, los Datos podrían ser transferidos a los países donde estén los centros de Datos del servicio y entregados al tercero Encargado del Tratamiento de los Datos Personales, y (v) cumplir con deberes legales a los que está obligada la Compañía.
+
+ETIQUETASENLINEA.CO, podrá consultar, comparar y evaluar toda la información que sobre el aspirante al cargo se encuentre almacenada en las bases de Datos de antecedentes judiciales o de seguridad legítimamente constituida, de naturaleza estatal o privada, nacional o extranjera, o cualquier base de Datos comercial o de servicios que permita establecer de manera integral el comportamiento que como proveedor, usuario, Cliente, garante, endosante, contribuyente y/o como titular de servicios financieros, comerciales o de cualquier otra índole.
+
+Los Datos Personales de carácter sensible que se puedan obtener de un proceso de selección de personal, serán protegidos a través de adecuadas medidas de seguridad.
+
+1.2 Tratamiento de Datos durante la relación laboral
+
+ETIQUETASENLINEA.CO. Informará las reglas aplicables al Tratamiento de los Datos Personales que suministren los Colaboradores y solicitará la correspondiente autorización para la aplicación del Tratamiento a sus Datos Personales.
+
+El uso de la información de los empleados para fines diferentes a la administración de la relación contractual, está prohibido en ETIQUETASENLINEA.CO. El uso diferente de los Datos e información personal de los Colaboradores solo procederá por orden de autoridad competente, siempre que en ella radique tal facultad. Corresponderá a la Compañía evaluar la competencia y eficacia de la orden de la autoridad competente, con el fin de prevenir una cesión no autorizada de Datos Personales.
+
+Las finalidades del tratamiento de los Datos Personales suministrados por los Colaboradores de ETIQUETASENLINEA.CO, son: (i) dar cumplimiento a la ley colombiana o extranjera y las órdenes de autoridades judiciales, administrativas o entidades privadas en ejercicio de servicios públicos, (ii) clasificación, almacenamiento, archivo de los Datos Personales, (iii) entrega de la información a terceros encargados de procesos de evaluación, entrenamiento, certificación, y demás procesos requeridos en el desarrollo de la relación contractual, (iv) verificar, comparar, evaluar las competencias laborales y personales de los Colaboradores, (v) en caso de que la Compañía contrate plataformas basadas en tecnología en la nube, los Datos podrán ser transferidos a los países donde se encuentren los centros de Datos del proveedor del servicio, (vi) en caso de utilizar esta tecnología, podrá entregar los Datos Personales al proveedor quién actuará como Encargado del Tratamiento de los mismos, (vii) emisión de certificaciones relativas a la relación del titular del Dato con la Compañía, (viii) envío de información a cajas de compensación, AFP, ARL, (ix) entrega de Datos Personales a proveedores para programas de bienestar laboral, y (x) envío de información de interés.
+
+ETIQUETASENLINEA.CO. podrá consultar, comparar y evaluar toda la información que sobre el empleado se encuentre almacenada en las bases de Datos de antecedentes judiciales o de seguridad legítimamente constituida, de naturaleza estatal o privada, nacional o extranjera, o cualquier base de Datos comercial o de servicios que permita establecer de manera integral el comportamiento que como proveedor, usuario, Cliente, garante, endosante, contribuyente y/o como titular de servicios financieros, comerciales o de cualquier otra índole.
+
+Tratamiento de Datos Personales de Clientes potenciales y Clientes.
+ETIQUETASENLINEA.CO. informará a los Clientes potenciales y a sus Clientes las políticas aplicables al Tratamiento de los Datos Personales que suministren en cumplimiento de la relación precontractual, contractual y pos contractual y solicitará la correspondiente autorización para la aplicación del Tratamiento a dicha información.
+
+Las finalidades de la entrega de los Datos Personales suministrados a la Compañía, son: (i) ordenar, catalogar, clasificar, almacenar y separar la información suministrada para su fácil identificación, (ii) consultar, comparar y evaluar toda la información que se encuentre almacenada en las bases de Datos de cualquier central de antecedentes judiciales o de seguridad legítimamente constituida, (iii) analizar, procesar, evaluar, tratar o comparar la información suministrada, (iv) consulta en las listas para la prevención y el control de lavado de activos y financiación del terrorismo, (iv) envío de información de interés y de invitaciones a eventos programados por la Compañía, (v) dar cumplimiento a la ley colombiana o extranjera y a las órdenes de autoridades judiciales, administrativas o entidades privadas en ejercicio de servicios públicos, en caso de que la Compañía contrate plataformas basadas en tecnología en la nube, los Datos podrán ser transferidos a los países donde se encuentren los centros de Datos del proveedor del servicio, (vi) en caso de utilizar esta tecnología, podrá entregar los Datos Personales al proveedor quién actuará como Encargado del Tratamiento de los mismos, (vii) emisión de certificaciones relativas a la relación del titular del Dato con la Compañía, y (viii) entrega de los Datos Personales a terceros a quienes se les encargue el Tratamiento de los mismos.
+
+NOTA: Para todos los casos es importante aclarar que en ningún momento estas bases de datos se comercializarán con otras empresas o sociedades.
+
+Capítulo IV. Derechos y deberes
+
+DERECHOS DE LOS TITULARES DE LA INFORMACIÓN. De conformidad con lo establecido en el artículo 8 de la Ley 1581 de 2012 el titular de los datos personales tiene los siguientes derechos:
+a) Conocer, actualizar y rectificar sus datos personales frente a ETIQUETASENLINEA.CO, en su condición de responsable del tratamiento.
+b) Solicitar prueba de la autorización otorgada a ETIQUETASENLINEA.CO, en su condición de Responsable del Tratamiento.
+c) Ser informado por ETIQUETASENLINEA.CO, previa solicitud, respecto del uso que le ha dado a sus datos personales.
+d) Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la Ley 1581 de 2012, una vez haya agotado el trámite de consulta o reclamo ante el Responsable del Tratamiento.
+e) Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales.
+f) Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento.
+DEBERES DE ETIQUETASENLINEA.CO, De conformidad con lo establecido en el artículo 17 de la Ley 1581 de 2012, la Compañía se compromete a cumplir en forma permanente con los siguientes deberes en lo relacionado con el tratamiento de datos personales:
+a) Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data;
+b) Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento;
+c) Realizar oportunamente, esto es en los términos previstos en los artículos 14 y 15 de la Ley 1581 de 2012, la actualización, rectificación o supresión de los datos;
+d) Tramitar las consultas y los reclamos formulados por los Titulares en los términos señalados en elartículo14 de la Ley 158 de 2012;
+e) Insertar en la base de datos la leyenda “información en discusión judicial” una vez notificado por parte de la autoridad competente sobre procesos judiciales relacionados con la calidad o detalles del dato personal;
+f) Abstenerse de circular información que esté siendo controvertida por el Titular y cuyo bloqueo haya sido ordenado por la Superintendencia de Industria y Comercio;
+g) Permitir el acceso a la información únicamente a las personas que pueden tener acceso a ella;
+h) Informar a la Superintendencia de Industria y Comercio cuando se presenten violación es a los códigos de seguridad y existan riesgos en la administración de la información de los Titulares;
+i) Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.
+Capítulo V. Procedimiento de acceso, consulta y reclamación
+
+ETIQUETASENLINEA.CO, en cumplimiento de las disposiciones constitucionales y legales de protección de Datos Personales, pone en conocimiento de los interesados el siguiente procedimiento:
+
+El Titular del Dato y/o su representante, acreditará esta condición mediante copia del documento pertinente y de su documento de identidad, que podrá suministrar por medio físico o por correo electrónico si los documentos han sido digitalizados. En caso de que el Titular este representado por un tercero deberá allegarse el respectivo poder, el cual deberá tener reconocimiento del contenido ante Notario. El apoderado deberá igualmente acreditar su identidad en los términos sindicados.
+La solicitud para ejercer cualquiera de los derechos mencionados deberá hacerse por escrito sea este físico o por correo electrónico si los documentos han sido digitalizados. Dicha solicitud podrá dirigirse a la dirección principal en Fómeque (carrera 3 No 6 44), o al correo electrónico habilitado por ETIQUETASENLINEA.CO para el ejercicio del Habeas Data infoca@Etiquetasenlinea.co.). ETIQUETASENLINEA.CO., podrá disponer de otros medios para que el Titular de los Datos Personales ejerza sus derechos.
+Para consultas acerca de información relacionada con los procedimientos el titular puede comunicándose en Bogotá al teléfono (57+1) 317655078, o en la página www.Etiquetasenlinea.co.
+La solicitud de ejercicio de cualquiera de los derechos mencionados contendrá la siguiente información:
+4.1. Nombre del Titular del Dato Personal, y de sus representantes, de ser el caso.
+
+4.2. Petición concreta y precisa de información, actualización, rectificación o revocatoria del consentimiento y/o su presión del Dato. En cada caso la petición deberá estar razonablemente fundamentada para que ETIQUETASENLINEA.CO proceda como Responsable del Tratamiento de la base de Datos a dar respuesta.
+
+4.3. Dirección física y/o electrónica para notificaciones.
+
+4.4. Documentos que soportan la solicitud conforme lo indicado en numerales anteriores.
+
+4.5. Firma de la solicitud por parte del Titular del Dato Personal.
+
+Si faltare alguno de los requisitos aquí indicados, ETIQUETASENLINEA.CO. así lo comunicará al interesado dentro de los cinco (5) días siguientes a la recepción de la solicitud, para que los mismos sean subsanados, procediendo entonces a dar respuesta a la solicitud de Habeas Data presentada. Si transcurridos dos (2) meses sin que presente la información requerida, se entenderá que se ha desistido de la solicitud. ETIQUETASENLINEA.CO. podrá disponer de formatos físicos y/o digitales para el ejercicio de este derecho y en ellos indicará si se trata de una consulta o de un reclamo del interesado.
+
+ETIQUETASENLINEA.CO, cuando sea Responsable del Tratamiento de la base de Datos Personales contenidos en sus sistemas de información, dará respuesta a la solicitud en el término de diez (10) días hábiles si se trata de una consulta; y de quince días (15) días hábiles si se trata de un reclamo. En igual término se pronunciará ETIQUETASENLINEA.CO cuando verifique que en sus sistemas de información no tiene Datos Personales del interesado que ejerce alguno de los derechos indicados.
+
+En caso de consultas, sino fuere posible dar respuesta dentro del término de diez (10) días hábiles, se informará al interesado los motivos de demora y la fecha en la que se atenderá el reclamo, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer término.
+
+En caso de reclamos, sino fuere posible dar respuesta dentro del término de quince (15) días hábiles, se informará al interesado los motivos de demora y la fecha en la que se atenderá el reclamo, la cual en ningún caso podrá superar los ocho (8) días hábiles siguientes al vencimiento del primer término.
+
+ETIQUETASENLINEA.CO, documentará y almacenará las solicitudes realizadas por los Titulares de los Datos o por los interesados en ejercicio de cualquiera de los derechos, así como las respuestas a tales solicitudes.
+
+Para acudir a la Superintendencia de Industria y Comercio en ejercicio de las acciones legales contempladas para los Titulares de Datos o interesados, se deberá agotar previamente el trámite de consultas y/o reclamos aquí descrito.
+
+Capítulo VI. Seguridad de la Información
+
+MEDIDAS DE SEGURIDAD. En desarrollo del principio de seguridad establecido en la Ley 1581 de 2012, la Compañía adoptará las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
+IMPLEMENTACIÓN DE LAS MEDIDAS DE SEGURIDAD. ETIQUETASENLINEA.CO, mantendrá protocolos de seguridad de obligatorio cumplimiento para el personal con acceso a los datos de carácter personal y los sistemas de información.
+Capítulo VII. Disposiciones finales
+
+ROLES Y RESPONSABILIDADES EN EL CUMPLIMIENTO DE LA PROTECCIÓN DE DATOS PERSONALES. La responsabilidad en el adecuado Tratamiento de Datos Personales al interior de ETIQUETASENLINEA.CO, está en cabeza de todos sus colaboradores y administradores.
+En consecuencia, al interior de las áreas que den Tratamiento a Datos Personales, se deberán adoptar las reglas y procedimientos para la aplicación y cumplimiento de la presente Política, dada su condición de encargados y/o responsables del tratamiento de los Datos Personales contenidos en los sistemas de información y las bases de datos de la Compañía.
+
+PROHIBICIONES
+En desarrollo de esta Política, se establecen las siguientes prohibiciones y sanciones como consecuencia de su incumplimiento.
+
+2.1 Se prohíbe el acceso, uso, gestión, cesión, comunicación, almacenamiento y cualquier otro Tratamiento de Datos Personales de carácter sensible sin autorización del Titular del Dato personal y/o de ETIQUETASENLINEA.CO.
+
+El incumplimiento de esta prohibición por parte de los Colaboradores de ETIQUETASENLINEA.CO será considerado como falta grave, que podrá dar lugar a la terminación de la relación laboral. Lo anterior, sin perjuicio de las acciones legales adicionales a que haya lugar.
+
+2.2. ETIQUETASENLINEA.CO, prohíbe la cesión, comunicación o circulación de Datos Personales, sin el consentimiento del Titular del Dato o sin autorización de ETIQUETASENLINEA.CO.
+
+2.3 ETIQUETASENLINEA.CO, prohíbe el Tratamiento de Datos Personales de niños y adolescentes menores de edad, salvo autorización expresa de sus representantes legales.
+
+VIGENCIA DE LAS BASES DE DATOS. Las bases tendrán una vigencia de 20 años.
+VIGENCIA. El presente documento rige a partir del 1 de diciembre de 2018
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="section3">
+            <a href="sobre-nosotros.html"><span>Sobre Nosotros</span></a>
+
+            <a href="terminos-y-condiciones.html"><span>Términos y Condiciones</span></a>
+
+            <a href="politica-de-privacidad.html"><span>Política de Privacidad</span></a>
+        </section>
+
+        <section class="section4">
+            <span>Encuentranos en redes sociales:</span>
+            
+            <figure>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./RECURSOS_GRAFICOS/ICONOS_REDES_SOCIALES/FACEBOOK.png" height= 30px width= 30px alt="Ícono de Facebook"></a>
+            </figure>
+
+            <figure>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./RECURSOS_GRAFICOS/ICONOS_REDES_SOCIALES/INSTAGRAM.png" height= 30px width= 30px alt="Ícono de Instagram"></a>
+            </figure>
+
+            <figure>
+                <a href="https://wa.me/573003167892" target="_blank"><img src="./RECURSOS_GRAFICOS/ICONOS_REDES_SOCIALES/WHATSAPP.png" height= 30px width= 30px alt="Ícono de Whatsapp"></a>
+            </figure>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+<script>
+    const open = document.getElementById('open');
+    const modal_container = document.getElementById('modal_container');
+    const close = document.getElementById('close');
+
+    open.addEventListener('click', ()=>{
+        modal_container.classList.add('show')
+    });
+
+    close.addEventListener('click', ()=>{
+        modal_container.classList.remove('show')
+    });
+</script>
+
+<script>
+    const open2 = document.getElementById('open2');
+    const modal_container_inicio = document.getElementById('modal_container_inicio');
+    const close2 = document.getElementById('close2');
+
+    open2.addEventListener('click', ()=>{
+        modal_container_inicio.classList.add('show2')
+    });
+
+    close2.addEventListener('click', ()=>{
+        modal_container_inicio.classList.remove('show2')
+    });
+</script>
+    
+</body>
+</html>
